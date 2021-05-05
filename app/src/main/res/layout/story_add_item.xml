@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="60dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:id="@+id/card1"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@mipmap/sign_add_icon"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:padding="3dp"
+        android:gravity="center"
+        android:layout_below="@id/card1"
+        android:text="isim"
+        android:textColor="#000"/>
+</LinearLayout>
